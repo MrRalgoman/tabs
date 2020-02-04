@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Tabs",
+    "version": "1.0",
+
+    "description": "Allows the user to save open tabs, can access a list of saved tabs for use at a later time.",
+
+    "browser_action": {
+        "default_icon": {
+            "48": "compass.png"
+        }
+    },
+
+    "content_scripts": [
+        {
+            "js": ["tabs.js"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
